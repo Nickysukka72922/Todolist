@@ -6,10 +6,12 @@
     <title>To do list</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body id="body">
     <h1>My to do list</h1>
-    <div>
-      <input type="text" id="taskinput" placeholder="enter a task">
-      <button onclick="addtask()">Add</button>
+    <button class="addtask" onclick="addtask()">Add</button>
+    <div id="task">
+            <input type="checkbox" name="Done" value="yes" class="checkbox-round">
+      <input name="task" type="text" id="taskinput" class="tasks" placeholder="enter a task">
     </div>
   </body>
+</html>
