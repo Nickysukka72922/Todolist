@@ -2,12 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <title>To do list</title>
     <link rel="stylesheet" href="style.css">
-    <script scr="script.js"></script>
   </head>
-  <body>
+  <body id="body">
     <h1>My to do list</h1>
     <div id="task-container">
 </div>
@@ -15,7 +14,7 @@
     <button class="deletetask" onclick="deleteTask()">delete</button>
     <button class="deletetask" onclick="clearTask()">clear</button>
     <div id="task" class="hidden">
-            <input type="checkbox" name="Done" class="checkbox-round">
+            <input type="checkbox" name="Done" value="yes" class="checkbox-round">
       <input name="task" type="text" class="tasks" placeholder="enter a task">
     </div>
   </body>
