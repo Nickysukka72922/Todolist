@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <title>To do list</title>
     <link rel="stylesheet" href="style.css">
+    <script scr="script.js"></script>
   </head>
-  <body id="body">
+  <body>
     <h1>My to do list</h1>
+    <div id="task-container">
+</div>
     <button class="addtask" onclick="addtask()">Add</button>
-    <div id="task">
-            <input type="checkbox" name="Done" value="yes" class="checkbox-round">
-      <input name="task" type="text" id="taskinput" class="tasks" placeholder="enter a task">
+    <button class="deletetask" onclick="deleteTask()">delete</button>
+    <button class="deletetask" onclick="clearTask()">clear</button>
+    <div id="task" class="hidden">
+            <input type="checkbox" name="Done" class="checkbox-round">
+      <input name="task" type="text" class="tasks" placeholder="enter a task">
     </div>
   </body>
 </html>
